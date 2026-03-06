@@ -161,7 +161,7 @@ export default function Index() {
                 <Icon name="Camera" size={24} style={{ color: "white" }} />
               </div>
               <div className="hidden sm:block text-left">
-                <div className="font-bold text-white leading-tight text-sm">ЕОСН</div>
+                <div className="font-bold text-white leading-tight text-sm">ЕСВН</div>
                 <div className="text-xs leading-tight" style={{ color: "rgba(255,255,255,0.6)" }}>
                   Пермский край
                 </div>
