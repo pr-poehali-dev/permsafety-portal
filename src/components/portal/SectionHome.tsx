@@ -42,6 +42,27 @@ export default function SectionHome({ navigate }: SectionHomeProps) {
         </div>
       </section>
 
+      {/* Stats */}
+      <section style={{ background: "var(--navy)" }}>
+        <div className="max-w-7xl mx-auto px-4 py-10">
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-px" style={{ background: "rgba(255,255,255,0.08)" }}>
+            {[
+              { icon: "Camera", num: "7 000+", label: "Камер подключено" },
+              { icon: "Clock", num: "24 / 7", label: "Мониторинг без остановок" },
+              { icon: "Archive", num: "30 дней", label: "Глубина архива записей" },
+              { icon: "MapPin", num: "48", label: "Муниципальных районов" },
+            ].map((s, i) => (
+              <div key={i} className="text-center py-8 px-4" style={{ background: "var(--navy)" }}>
+                <div className="flex justify-center mb-3">
+                  <Icon name={s.icon} size={28} style={{ color: "var(--gold-light)" }} />
+                </div>
+                <div className="text-2xl md:text-3xl font-black text-white mb-1">{s.num}</div>
+                <div className="text-sm" style={{ color: "rgba(255,255,255,0.55)" }}>{s.label}</div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
 
       {/* Features */}
       <section className="py-16" style={{ background: "var(--gray-bg)" }}>
