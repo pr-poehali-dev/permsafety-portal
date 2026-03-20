@@ -50,7 +50,7 @@ export default function SectionHome({ navigate }: SectionHomeProps) {
               { icon: "Camera", num: "7 000+", label: "Камер подключено" },
               { icon: "Clock", num: "24 / 7", label: "Мониторинг без остановок" },
               { icon: "Archive", num: "30 дней", label: "Глубина архива записей" },
-              { icon: "MapPin", num: "48", label: "Муниципальных районов" },
+              { icon: "MapPin", num: "43", label: "Муниципальных районов" },
             ].map((s, i) => (
               <div key={i} className="text-center py-8 px-4" style={{ background: "var(--navy)" }}>
                 <div className="flex justify-center mb-3">
